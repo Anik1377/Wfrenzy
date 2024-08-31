@@ -1,0 +1,684 @@
+/* ----------------------------------------------Fundamentals--------------------------------------------- */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.Pad-1 {
+    padding: 1vw;
+}
+
+.Pad-2 {
+    padding: 2vw;
+}
+
+.Pad-3 {
+    padding: 3vw;
+}
+
+.Pad-l1 {
+    padding-left: 1vw;
+}
+
+.Pad-1l1 {
+    padding: 1vh 1vw;
+}
+
+.Pad-l2 {
+    padding-left: 2vw;
+}
+
+.Pad-l3 {
+    padding-left: 3vw;
+}
+
+.Pad-r1 {
+    padding-right: 1vw;
+}
+
+.Pad-r2 {
+    padding-right: 2vw;
+}
+
+.Pad-r3 {
+    padding-right: 3vw;
+}
+
+.Mar-1 {
+    margin: 1vw;
+}
+
+.Mar-2 {
+    margin: 2vw;
+}
+
+.Mar-3 {
+    margin: 2vw;
+}
+
+.Mar-l1 {
+    margin-left: 1vw;
+}
+
+.Mar-l2 {
+    margin-left: 2vw;
+}
+
+.Mar-l3 {
+    margin-left: 3vw;
+}
+
+.Mar-r1 {
+    margin-right: 1vw;
+}
+
+.Mar-r2 {
+    margin-right: 2vw;
+}
+
+.Mar-r3 {
+    margin-right: 3vw;
+}
+
+.Dis-fl {
+    display: flex;
+}
+
+.Dis-il {
+    display: inline;
+}
+
+.Dis-ilb {
+    display: inline-block;
+}
+
+.Dis-grd {
+    display: grid;
+}
+
+/* ----------------------------------------------Alignment---------------------------------------------- */
+.AL-r {
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+}
+
+.AL-l {
+    display: flex;
+    justify-content: start;
+    padding-right: 10px;
+}
+
+.AL-c {
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.AL-mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+
+/* ----------------------------------------------Shadows---------------------------------------------- */
+.Shd-black {
+    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
+}
+
+.Shd-white {
+    filter: drop-shadow(0px 0px 10px white);
+}
+
+.Shd-red {
+    filter: drop-shadow(0px 0px 10px red);
+}
+
+/* ----------------------------------------------Text Effects & Sizes---------------------------------------------- */
+/* Sizes */
+.Text-1xl {
+    font-size: 2vh;
+}
+
+.Text-2xl {
+    font-size: 4vh;
+}
+
+.Text-3xl {
+    font-size: 6vh;
+}
+
+.Text-4xl {
+    font-size: 8vh;
+}
+
+/* Colors */
+.Text-cw {
+    color: white;
+}
+
+.Text-cy {
+    color: rgb(255, 230, 0);
+}
+
+.Text-cr {
+    color: rgb(180, 0, 0);
+}
+
+.Text-cbl {
+    color: rgb(4, 0, 255);
+}
+
+.Text-cb {
+    color: rgb(17, 17, 17);
+}
+
+/* ------------------------------------------Background Colors---------------------------------------- */
+.Bg-red {
+    background-color: red;
+}
+
+.Bg-green {
+    background-color: rgb(43, 255, 0);
+}
+
+.Bg-blue {
+    background-color: rgb(0, 255, 242);
+}
+
+.Bg-yellow {
+    background-color: rgb(255, 208, 0);
+}
+
+.Bg-black {
+    background-color: rgb(0, 0, 0);
+}
+
+.Bg-gray {
+    background-color: rgb(31, 31, 31);
+}
+
+/* -----------------------------------------------Buttons----------------------------------------------- */
+.Button1 {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    background-color: rgb(199, 0, 60);
+    padding: 1vw;
+    border-radius: 335px;
+    border: none;
+}
+
+.Button2 {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    background-color: rgb(8, 8, 8);
+    padding: 1vw;
+    border-radius: 335px;
+    border: none;
+}
+
+.Button3 {
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+    font-size: 30px;
+    background-color: rgb(0, 255, 179);
+    padding: 1vw;
+    border-radius: 335px;
+    border: none;
+}
+
+.Button4 {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(52, 152, 219);
+    padding: 1vw;
+    border-radius: 20px;
+    border: none;
+}
+
+.Button5 {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    background-color: rgb(231, 76, 60);
+    padding: 1vw;
+    border-radius: 50px;
+    border: none;
+}
+
+/* ----------------------------------------------GlassMorphism---------------------------------------------- */
+.Glass {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* ----------------------------------------------Box Shadow---------------------------------------------- */
+.Shd-sm {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.Shd-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.Shd-lg {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* ----------------------------------------------Border Radius---------------------------------------------- */
+.Brd-rs {
+    border-radius: 4px;
+}
+
+.Brd-rm {
+    border-radius: 8px;
+}
+
+.Brd-rl {
+    border-radius: 16px;
+}
+
+/* ----------------------------------------------Text Shadow---------------------------------------------- */
+.Txt-shd-sm {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.Txt-shd-md {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.Txt-shd-lg {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* ----------------------------------------------Text Transformation---------------------------------------------- */
+.Txt-up {
+    text-transform: uppercase;
+}
+
+.Txt-lw {
+    text-transform: lowercase;
+}
+
+.Txt-cap {
+    text-transform: capitalize;
+}
+
+/* ----------------------------------------------Opacity---------------------------------------------- */
+.Opacity-0 {
+    opacity: 0;
+}
+
+.Opacity-50 {
+    opacity: 0.5;
+}
+
+.Opacity-100 {
+    opacity: 1;
+}
+
+/* ----------------------------------------------Flexbox Layout---------------------------------------------- */
+.Dis-fc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Dis-fb {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ----------------------------------------------Text Alignment---------------------------------------------- */
+.Txt-left {
+    text-align: left;
+}
+
+.Txt-center {
+    text-align: center;
+}
+
+.Txt-right {
+    text-align: right;
+}
+
+/* ----------------------------------------------Margin---------------------------------------------- */
+.Mar-0 {
+    margin: 0;
+}
+
+.Mar-1 {
+    margin: 4px;
+}
+
+.Mar-2 {
+    margin: 8px;
+}
+
+.Mar-3 {
+    margin: 16px;
+}
+
+.Mar-4 {
+    margin: 32px;
+}
+
+/* ----------------------------------------------Padding---------------------------------------------- */
+.Pad-0 {
+    padding: 0;
+}
+
+.Pad-1 {
+    padding: 4px;
+}
+
+.Pad-2 {
+    padding: 8px;
+}
+
+.Pad-3 {
+    padding: 16px;
+}
+
+.Pad-4 {
+    padding: 32px;
+}
+
+/* ----------------------------------------------Background Color---------------------------------------------- */
+.Bg-pr {
+    background-color: #007bff;
+}
+
+.Bg-sc {
+    background-color: #6c757d;
+}
+
+.Bg-su {
+    background-color: #28a745;
+}
+
+/* ----------------------------------------------Font Size---------------------------------------------- */
+.Txt-xs {
+    font-size: 12px;
+}
+
+.Txt-sm {
+    font-size: 14px;
+}
+
+.Txt-md {
+    font-size: 16px;
+}
+
+.Txt-lg {
+    font-size: 18px;
+}
+
+.Txt-xl {
+    font-size: 20px;
+}
+
+/* ----------------------------------------------Font Weight---------------------------------------------- */
+.Fnt-thin {
+    font-weight: 100;
+}
+
+.Fnt-norm {
+    font-weight: 400;
+}
+
+.Fnt-bold {
+    font-weight: 700;
+}
+
+/* ----------------------------------------------Hover Effects---------------------------------------------- */
+.Hvr-grow {
+    transition: transform 0.2s;
+}
+
+.Hvr-grow:hover {
+    transform: scale(1.05);
+}
+
+.Hvr-shrink {
+    transition: transform 0.2s;
+}
+
+.Hvr-shrink:hover {
+    transform: scale(0.95);
+}
+
+.Hvr-bg-change {
+    transition: background-color 0.3s;
+}
+
+.Hvr-bg-change:hover {
+    background-color: #0056b3;
+}
+
+.Hvr-txt-color {
+    transition: color 0.3s;
+}
+
+.Hvr-txt-color:hover {
+    color: #ff6347;
+}
+
+.Hvr-shadow {
+    transition: box-shadow 0.3s;
+}
+
+.Hvr-shadow:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.Hvr-opacity {
+    transition: opacity 0.3s;
+}
+
+.Hvr-opacity:hover {
+    opacity: 0.7;
+}
+
+/* ----------------------------------------------Border Styles---------------------------------------------- */
+.Brd-solid {
+    border-style: solid;
+}
+
+.Brd-dashed {
+    border-style: dashed;
+}
+
+.Brd-dotted {
+    border-style: dotted;
+}
+
+/* ----------------------------------------------Overflow---------------------------------------------- */
+.Ovfl-hidden {
+    overflow: hidden;
+}
+
+.Ovfl-scroll {
+    overflow: scroll;
+}
+
+.Ovfl-auto {
+    overflow: auto;
+}
+
+/* ----------------------------------------------Positioning---------------------------------------------- */
+.Pos-rel {
+    position: relative;
+}
+
+.Pos-abs {
+    position: absolute;
+}
+
+.Pos-fix {
+    position: fixed;
+}
+
+/* ----------------------------------------------Z-Index---------------------------------------------- */
+.Z-0 {
+    z-index: 0;
+}
+
+.Z-10 {
+    z-index: 10;
+}
+
+.Z-20 {
+    z-index: 20;
+}
+
+.Z-30 {
+    z-index: 30;
+}
+
+/* ----------------------------------------------Width---------------------------------------------- */
+.W-25 {
+    width: 25%;
+}
+
+.W-50 {
+    width: 50%;
+}
+
+.W-75 {
+    width: 75%;
+}
+
+.W-100 {
+    width: 100%;
+}
+
+/* ----------------------------------------------Height---------------------------------------------- */
+.H-25 {
+    height: 25%;
+}
+
+.H-50 {
+    height: 50%;
+}
+
+.H-75 {
+    height: 75%;
+}
+
+.H-100 {
+    height: 100%;
+}
+
+/* ----------------------------------------------Cursor---------------------------------------------- */
+.Cur-pointer {
+    cursor: pointer;
+}
+
+.Cur-default {
+    cursor: default;
+}
+
+.Cur-move {
+    cursor: move;
+}
+
+/* ----------------------------------------------Transform---------------------------------------------- */
+.Tsfrm-rotate {
+    transform: rotate(45deg);
+}
+
+.Tsfrm-scale {
+    transform: scale(1.2);
+}
+
+.Tsfrm-translate {
+    transform: translateX(20px);
+}
+
+/* ----------------------------------------------Display---------------------------------------------- */
+.Dis-none {
+    display: none;
+}
+
+.Dis-block {
+    display: block;
+}
+
+.Dis-inline {
+    display: inline;
+}
+
+.Dis-inline-blk {
+    display: inline-block;
+}
+
+/* ----------------------------------------------Float---------------------------------------------- */
+.Float-left {
+    float: left;
+}
+
+.Float-right {
+    float: right;
+}
+
+.Float-none {
+    float: none;
+}
+
+/* ----------------------------------------------Text Decoration---------------------------------------------- */
+.Txt-underline {
+    text-decoration: underline;
+}
+
+.Txt-line-through {
+    text-decoration: line-through;
+}
+
+.Txt-none {
+    text-decoration: none;
+}
+
+/* ----------------------------------------------Visibility---------------------------------------------- */
+.Vis-visible {
+    visibility: visible;
+}
+
+.Vis-hidden {
+    visibility: hidden;
+}
+
+/* ----------------------------------------------Border Radius---------------------------------------------- */
+.Brd-rd-sm {
+    border-radius: 4px;
+}
+
+.Brd-rd-md {
+    border-radius: 8px;
+}
+
+.Brd-rd-lg {
+    border-radius: 16px;
+}
+
+/* ----------------------------------------------Transition---------------------------------------------- */
+.Ts-all {
+    transition: all 0.3s ease;
+}
+
+.Ts-bg {
+    transition: background-color 0.3s ease;
+}
+
+.Ts-txt {
+    transition: color 0.3s ease;
+}
